@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+      input[type=number]{
+        width: 50px;
+      }
+      body{
+        font-family: 'Montserrat', sans-serif;
+        background: rgb(29, 191, 255);
+      }
+    </style>
+    <title>Testing JavaScript</title>
+  </head>
+  <body>
+    <div>
+      <button type="button" onclick="view.displayTodos()">Click to see tasks.</button>
+      <button type="button" onclick="handlers.toggleAll()">Toggle all!</button>
+    </div>
+    <br></br>
+    <div>
+      <input type="text" id="addTodoInput" value="Enter here." onclick="this.value=''">
+      <button onclick="handlers.addTodo()">Add this todo!</button>
+    </div>
+    <div>
+      <input id="changeTodoPositionInput" type="number" value='1'>
+      <input id="changeTodoTextInput" type="text" value="Enter new task here." onfocus="this.value=''">
+      <button onclick="handlers.changeTodo()">Change Todo</button>
+    </div>
+    <div>
+      <input id="toggleTodoPosition" type="number" value="1"><button onclick="handlers.toggleTodo()">Toggle todo</button>
+    </div>
+    <h2>My Todos:</h2>
+    <ul></ul>
+  </body>
+</html>
+<script src=learn.js></script>
